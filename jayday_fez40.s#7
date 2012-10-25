@@ -15259,8 +15259,8 @@ by exp-project-lbr.ulp</description>
 <part name="V7" library="supply2" deviceset="VCC" device=""/>
 <part name="V2" library="supply2" deviceset="VCC" device=""/>
 <part name="V9" library="supply2" deviceset="VCC" device=""/>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
-<part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="LDR" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
+<part name="RST" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -15377,8 +15377,8 @@ PB10</text>
 <instance part="V7" gate="G$1" x="220.98" y="35.56" rot="R180"/>
 <instance part="V2" gate="G$1" x="-60.96" y="10.16"/>
 <instance part="V9" gate="G$1" x="-60.96" y="45.72"/>
-<instance part="JP1" gate="G$1" x="-83.82" y="5.08"/>
-<instance part="JP2" gate="G$1" x="-83.82" y="40.64"/>
+<instance part="LDR" gate="G$1" x="-83.82" y="5.08"/>
+<instance part="RST" gate="G$1" x="-83.82" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -15680,11 +15680,13 @@ PB10</text>
 <wire x1="-76.2" y1="7.62" x2="-73.66" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="7.62" x2="-60.96" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="V2" gate="G$1" pin="VCC"/>
+<pinref part="LDR" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-76.2" y1="43.18" x2="-73.66" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="43.18" x2="-60.96" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="V9" gate="G$1" pin="VCC"/>
+<pinref part="RST" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="USB_DP" class="0">
@@ -15758,7 +15760,7 @@ PB10</text>
 <wire x1="-76.2" y1="40.64" x2="-73.66" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="40.64" x2="-60.96" y2="40.64" width="0.1524" layer="91"/>
 <label x="-71.12" y="40.64" size="1.778" layer="95"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="RST" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -15821,7 +15823,7 @@ PB10</text>
 <wire x1="-76.2" y1="5.08" x2="-73.66" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="5.08" x2="-60.96" y2="5.08" width="0.1524" layer="91"/>
 <label x="-71.12" y="5.08" size="1.778" layer="95"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="LDR" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PA10/LOADER1U2/PWM" class="0">

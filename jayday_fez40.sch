@@ -14859,21 +14859,21 @@ by exp-project-lbr.ulp</description>
 <part name="SUPPLY7" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="+5V" device=""/>
 <part name="U$2" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH"/>
-<part name="X_LCD_OUT" library="ozlollc" deviceset="SHF105" device=""/>
+<part name="LCD_OUT" library="ozlollc" deviceset="SHF105" device=""/>
 <part name="N_M_HEAT" library="ozlollc" deviceset="SI2312BDS" device=""/>
-<part name="N_M_SENS" library="ozlollc" deviceset="SI2312BDS" device=""/>
+<part name="M_SENS" library="ozlollc" deviceset="SI2312BDS" device=""/>
 <part name="SIM900-EXT" library="SparkFun-Connectors" deviceset="M08" device="1X08"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="+12V" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="P+5V" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="+5V" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
 <part name="V1" library="supply2" deviceset="+5V" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="P+VCC" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="VCC" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="P+12V" library="led" deviceset="LED" device="CHIPLED_0805"/>
+<part name="+12V" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
 <part name="SUPPLY10" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="+12V" device=""/>
@@ -14970,21 +14970,21 @@ PB10</text>
 <instance part="SUPPLY7" gate="+5V" x="-55.88" y="60.96"/>
 <instance part="SUPPLY8" gate="+5V" x="111.76" y="116.84" rot="R180"/>
 <instance part="U$2" gate="G$1" x="162.56" y="124.46"/>
-<instance part="X_LCD_OUT" gate="X" x="22.86" y="104.14"/>
+<instance part="LCD_OUT" gate="X" x="22.86" y="104.14"/>
 <instance part="N_M_HEAT" gate="G$1" x="106.68" y="165.1"/>
-<instance part="N_M_SENS" gate="G$1" x="187.96" y="165.1"/>
+<instance part="M_SENS" gate="G$1" x="187.96" y="165.1"/>
 <instance part="SIM900-EXT" gate="G$1" x="243.84" y="121.92"/>
 <instance part="GND3" gate="1" x="261.62" y="106.68"/>
 <instance part="SUPPLY9" gate="+12V" x="256.54" y="106.68" rot="R180"/>
 <instance part="GND7" gate="1" x="203.2" y="-17.78"/>
-<instance part="P+5V" gate="G$1" x="203.2" y="-7.62"/>
+<instance part="+5V" gate="G$1" x="203.2" y="-7.62"/>
 <instance part="R7" gate="G$1" x="203.2" y="2.54" rot="R90"/>
 <instance part="V1" gate="+5V" x="203.2" y="12.7"/>
 <instance part="GND10" gate="1" x="213.36" y="-17.78"/>
-<instance part="P+VCC" gate="G$1" x="213.36" y="-7.62"/>
+<instance part="VCC" gate="G$1" x="213.36" y="-7.62"/>
 <instance part="R8" gate="G$1" x="213.36" y="2.54" rot="R90"/>
 <instance part="GND11" gate="1" x="193.04" y="-17.78"/>
-<instance part="P+12V" gate="G$1" x="193.04" y="-7.62"/>
+<instance part="+12V" gate="G$1" x="193.04" y="-7.62"/>
 <instance part="R9" gate="G$1" x="193.04" y="2.54" rot="R90"/>
 <instance part="SUPPLY10" gate="+12V" x="193.04" y="12.7"/>
 <instance part="SUPPLY12" gate="+12V" x="111.76" y="127"/>
@@ -15153,17 +15153,17 @@ PB10</text>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="P+5V" gate="G$1" pin="C"/>
+<pinref part="+5V" gate="G$1" pin="C"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="203.2" y1="-12.7" x2="203.2" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+VCC" gate="G$1" pin="C"/>
+<pinref part="VCC" gate="G$1" pin="C"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="213.36" y1="-12.7" x2="213.36" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+12V" gate="G$1" pin="C"/>
+<pinref part="+12V" gate="G$1" pin="C"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="193.04" y1="-12.7" x2="193.04" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
@@ -15185,7 +15185,7 @@ PB10</text>
 <wire x1="187.96" y1="149.86" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="149.86" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
 <junction x="187.96" y="149.86"/>
-<pinref part="N_M_SENS" gate="G$1" pin="S"/>
+<pinref part="M_SENS" gate="G$1" pin="S"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="152.4" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
@@ -15291,7 +15291,7 @@ PB10</text>
 </segment>
 <segment>
 <pinref part="SUPPLY15" gate="G$1" pin="VCC"/>
-<pinref part="X_LCD_OUT" gate="X" pin="1"/>
+<pinref part="LCD_OUT" gate="X" pin="1"/>
 </segment>
 <segment>
 <wire x1="231.14" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
@@ -15367,7 +15367,7 @@ PB10</text>
 <pinref part="SUPPLY8" gate="+5V" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="2"/>
+<pinref part="LCD_OUT" gate="X" pin="2"/>
 <pinref part="SUPPLY13" gate="+5V" pin="+5V"/>
 </segment>
 <segment>
@@ -15755,7 +15755,7 @@ PB10</text>
 <pinref part="IC1" gate="G$1" pin="PC6"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="6"/>
+<pinref part="LCD_OUT" gate="X" pin="6"/>
 <wire x1="33.02" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 <label x="35.56" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -15767,7 +15767,7 @@ PB10</text>
 <pinref part="IC1" gate="G$1" pin="PC7"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="8"/>
+<pinref part="LCD_OUT" gate="X" pin="8"/>
 <wire x1="33.02" y1="101.6" x2="55.88" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <label x="35.56" y="101.6" size="1.778" layer="95"/>
@@ -15820,7 +15820,7 @@ PB10</text>
 <label x="111.76" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="7"/>
+<pinref part="LCD_OUT" gate="X" pin="7"/>
 <wire x1="12.7" y1="101.6" x2="-17.78" y2="101.6" width="0.1524" layer="91"/>
 <label x="-22.86" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -15832,7 +15832,7 @@ PB10</text>
 <pinref part="IC1" gate="G$1" pin="PB9"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="9"/>
+<pinref part="LCD_OUT" gate="X" pin="9"/>
 <wire x1="12.7" y1="99.06" x2="-17.78" y2="99.06" width="0.1524" layer="91"/>
 <label x="-22.86" y="99.06" size="1.778" layer="95"/>
 </segment>
@@ -15844,7 +15844,7 @@ PB10</text>
 <pinref part="IC1" gate="G$1" pin="PB8"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="5"/>
+<pinref part="LCD_OUT" gate="X" pin="5"/>
 <wire x1="12.7" y1="104.14" x2="-17.78" y2="104.14" width="0.1524" layer="91"/>
 <label x="-22.86" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -15856,7 +15856,7 @@ PB10</text>
 <pinref part="IC1" gate="G$1" pin="PB13"/>
 </segment>
 <segment>
-<pinref part="N_M_SENS" gate="G$1" pin="G"/>
+<pinref part="M_SENS" gate="G$1" pin="G"/>
 <wire x1="182.88" y1="162.56" x2="172.72" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="162.56" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
@@ -15895,7 +15895,7 @@ PB10</text>
 <pinref part="IC1" gate="G$1" pin="PB4"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="4"/>
+<pinref part="LCD_OUT" gate="X" pin="4"/>
 <wire x1="33.02" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
 <label x="35.56" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -15920,7 +15920,7 @@ PB10</text>
 <pinref part="IC1" gate="G$1" pin="PB7"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="3"/>
+<pinref part="LCD_OUT" gate="X" pin="3"/>
 <wire x1="12.7" y1="106.68" x2="-17.78" y2="106.68" width="0.1524" layer="91"/>
 <label x="-22.86" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -15962,21 +15962,21 @@ PB10</text>
 <segment>
 <wire x1="203.2" y1="-5.08" x2="203.2" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="P+5V" gate="G$1" pin="A"/>
+<pinref part="+5V" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <wire x1="213.36" y1="-5.08" x2="213.36" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="P+VCC" gate="G$1" pin="A"/>
+<pinref part="VCC" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <wire x1="193.04" y1="-5.08" x2="193.04" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="P+12V" gate="G$1" pin="A"/>
+<pinref part="+12V" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="HEAT_OUT" class="0">
@@ -15994,7 +15994,7 @@ PB10</text>
 </net>
 <net name="SENS_OUT" class="0">
 <segment>
-<pinref part="N_M_SENS" gate="G$1" pin="D"/>
+<pinref part="M_SENS" gate="G$1" pin="D"/>
 <wire x1="187.96" y1="170.18" x2="187.96" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="172.72" x2="147.32" y2="172.72" width="0.1524" layer="91"/>
 <label x="147.32" y="172.72" size="1.778" layer="95"/>
@@ -16013,7 +16013,7 @@ PB10</text>
 <label x="-7.62" y="157.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X_LCD_OUT" gate="X" pin="10"/>
+<pinref part="LCD_OUT" gate="X" pin="10"/>
 <wire x1="33.02" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <label x="35.56" y="99.06" size="1.778" layer="95"/>
 </segment>

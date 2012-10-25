@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/Users/Roger/Documents/eagle/jayday_fez40/jayday_fez40.brd
 
-Start at      : 01:36:25 (10/24/2012)
-End at        : 01:37:34 (10/24/2012)
-Elapsed time  : 00:01:09
+Start at      : 19:49:50 (10/24/2012)
+End at        : 19:49:55 (10/24/2012)
+Elapsed time  : 00:00:05
 
-Signals       :    69   RoutingGrid: 9.84252 mil  Layers: 2
-Connections   :   129   predefined:  72 ( 78 Vias )
+Signals       :    69   RoutingGrid: 7 mil  Layers: 2
+Connections   :   127   predefined:  32 ( 7 Vias )
 
-Router memory :   436320
+Router memory :   466048
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:00  00:01:04  00:00:01  00:00:01  00:00:01  00:00:02
-Number of Ripups  :         0       109         0         0         0         0
-max. Level        :         0         9         0         0         0         0
-max. Total        :         0        12         0         0         0         0
+Time per pass     :  00:00:00  00:00:01  00:00:01  00:00:01  00:00:01  00:00:01
+Number of Ripups  :         0         1         0         0         0         0
+max. Level        :         0         1         0         0         0         0
+max. Total        :         0        19         0         0         0         0
 
-Routed            :         1        47        47        47        47        47
-Vias              :         0        64        33        31        28        28
-Resolution        :    56.6 %    92.2 %    92.2 %    92.2 %    92.2 %    92.2 %
+Routed            :         6        95        95        95        95        95
+Vias              :         0       117        70        64        59        58
+Resolution        :    29.9 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 92.2% finished
+Final             : 100.0% finished
