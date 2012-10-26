@@ -15680,11 +15680,13 @@ PB10</text>
 <wire x1="-76.2" y1="7.62" x2="-73.66" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="7.62" x2="-60.96" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="V2" gate="G$1" pin="VCC"/>
+<pinref part="LDR" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <wire x1="-76.2" y1="43.18" x2="-73.66" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="43.18" x2="-60.96" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="V9" gate="G$1" pin="VCC"/>
+<pinref part="RST" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="USB_DP" class="0">

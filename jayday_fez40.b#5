@@ -13,7 +13,7 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -1066,10 +1066,13 @@ design rules under a new name.</description>
 <element name="L4" library="GHI" package="UP2BXXX" value="68uH" x="23.75" y="7.875" rot="R90"/>
 <element name="D7" library="GHI" package="DIODE_SMA" value="B260" x="16" y="8.75" rot="R270"/>
 <element name="C29" library="rcl" package="D/7343-31W" value="220uF 6.3V B45197A1227K409" x="14.25" y="14.375" smashed="yes">
-<attribute name="NAME" x="12.6" y="13.925" size="1.27" layer="25"/>
+<attribute name="NAME" x="14.2002" y="14.9918" size="1.27" layer="25" rot="SR180" align="bottom-center"/>
 <attribute name="VALUE" x="10.6" y="10.8" size="1.27" layer="27"/>
 </element>
-<element name="C37" library="rcl" package="D/7343-31W" value="15uF 35V T491D156K035AT" x="13.25" y="2.5" rot="R180"/>
+<element name="C37" library="rcl" package="D/7343-31W" value="15uF 35V T491D156K035AT" x="13.25" y="2.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.9442" y="3.0448" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="16.9" y="6.075" size="1.27" layer="27" rot="R180"/>
+</element>
 <element name="U$2" library="SparkFun-Connectors" package="RJ45-8" value="RJ45-8PTH" x="37.375" y="3.5"/>
 <element name="LCD_OUT" library="ozlollc" package="GAD_PAC_SMD" value="SHF105" x="30.7112" y="45.4084" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.739" y="48.0596" size="0.8128" layer="25" ratio="12" rot="R270"/>

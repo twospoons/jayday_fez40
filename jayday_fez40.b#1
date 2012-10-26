@@ -129,6 +129,7 @@
 <text x="0.5334" y="48.3616" size="1.016" layer="25">(c) ozlo, llc - 2012 - rev 1.0</text>
 <text x="49.4284" y="48.3616" size="1.016" layer="26" rot="MR0">(c) ozlo, llc - 2012 - rev 1.0</text>
 <text x="49.4284" y="46.9392" size="0.8128" layer="26" rot="MR0">Based on GHI's OSHW FEZ Cerberus</text>
+<text x="30.226" y="6.1722" size="1.27" layer="25" font="vector" ratio="13">ORDER#: 62385</text>
 </plain>
 <libraries>
 <library name="ozlollc">

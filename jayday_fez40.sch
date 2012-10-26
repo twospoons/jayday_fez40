@@ -14874,7 +14874,7 @@ by exp-project-lbr.ulp</description>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="+12V" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="825"/>
 <part name="SUPPLY10" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="+12V" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>

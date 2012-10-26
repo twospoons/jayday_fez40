@@ -13,7 +13,7 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -1063,7 +1063,10 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="42.231" y="29.383" size="1.27" layer="27"/>
 </element>
 <element name="IC9" library="GHI" package="SO8" value="MIC4680-ADJ" x="11.5" y="8.75"/>
-<element name="L4" library="GHI" package="UP2BXXX" value="68uH" x="23.75" y="7.875" rot="R90"/>
+<element name="L4" library="GHI" package="UP2BXXX" value="68uH" x="23.75" y="7.875" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.861" y="8.6088" size="1.27" layer="25" rot="SR270"/>
+<attribute name="VALUE" x="26.75" y="4.875" size="1.27" layer="27" rot="R90"/>
+</element>
 <element name="D7" library="GHI" package="DIODE_SMA" value="B260" x="16" y="8.75" rot="R270"/>
 <element name="C29" library="rcl" package="D/7343-31W" value="220uF 6.3V B45197A1227K409" x="14.25" y="14.375" smashed="yes">
 <attribute name="NAME" x="14.2002" y="14.9918" size="1.27" layer="25" rot="SR180" align="bottom-center"/>

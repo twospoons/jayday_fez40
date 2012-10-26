@@ -15236,17 +15236,14 @@ by exp-project-lbr.ulp</description>
 <part name="SUPPLY10" library="supply2" deviceset="+12V" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="+12V" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="P-HEAT" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="P-SENS" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="R11" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
 <part name="SUPPLY13" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY15" library="supply2" deviceset="VCC" device=""/>
 <part name="N_M_LCD" library="ozlollc" deviceset="SI2312BDS" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="P-LCD" library="led" deviceset="LED" device="CHIPLED_0805"/>
-<part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="330"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="U3" library="FEZ_Panda" deviceset="MICROSD_MICROSD" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -15354,16 +15351,13 @@ PB10</text>
 <instance part="SUPPLY10" gate="+12V" x="193.04" y="12.7"/>
 <instance part="SUPPLY12" gate="+12V" x="111.76" y="127"/>
 <instance part="GND12" gate="1" x="106.68" y="144.78"/>
-<instance part="P-HEAT" gate="G$1" x="99.06" y="149.86" rot="R90"/>
 <instance part="R10" gate="G$1" x="91.44" y="157.48" rot="R90"/>
 <instance part="GND13" gate="1" x="187.96" y="144.78"/>
-<instance part="P-SENS" gate="G$1" x="180.34" y="149.86" rot="R90"/>
 <instance part="R11" gate="G$1" x="172.72" y="157.48" rot="R90"/>
 <instance part="SUPPLY13" gate="+5V" x="33.02" y="111.76"/>
 <instance part="SUPPLY15" gate="G$1" x="12.7" y="111.76"/>
 <instance part="N_M_LCD" gate="G$1" x="33.02" y="149.86"/>
 <instance part="GND15" gate="1" x="33.02" y="129.54"/>
-<instance part="P-LCD" gate="G$1" x="25.4" y="134.62" rot="R90"/>
 <instance part="R12" gate="G$1" x="17.78" y="142.24" rot="R90"/>
 <instance part="U3" gate="G$1" x="248.92" y="58.42"/>
 <instance part="GND16" gate="1" x="259.08" y="38.1"/>
@@ -15547,28 +15541,37 @@ PB10</text>
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="N_M_HEAT" gate="G$1" pin="S"/>
 <wire x1="106.68" y1="160.02" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="P-HEAT" gate="G$1" pin="C"/>
 <wire x1="106.68" y1="149.86" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="149.86" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
 <junction x="106.68" y="149.86"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="152.4" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="149.86" x2="96.52" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="149.86" x2="104.14" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="187.96" y1="160.02" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="P-SENS" gate="G$1" pin="C"/>
 <wire x1="187.96" y1="149.86" x2="187.96" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="149.86" x2="187.96" y2="149.86" width="0.1524" layer="91"/>
 <junction x="187.96" y="149.86"/>
 <pinref part="N_M_SENS" gate="G$1" pin="S"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="152.4" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="149.86" x2="185.42" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="33.02" y1="144.78" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="P-LCD" gate="G$1" pin="C"/>
 <wire x1="33.02" y1="134.62" x2="33.02" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
 <junction x="33.02" y="134.62"/>
 <pinref part="N_M_LCD" gate="G$1" pin="S"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="137.16" x2="17.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="G1"/>
@@ -16352,14 +16355,6 @@ PB10</text>
 <pinref part="P+12V" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="P-HEAT" gate="G$1" pin="A"/>
-<wire x1="91.44" y1="152.4" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="149.86" x2="96.52" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="HEAT_OUT" class="0">
 <segment>
 <pinref part="N_M_HEAT" gate="G$1" pin="D"/>
@@ -16373,14 +16368,6 @@ PB10</text>
 <label x="116.84" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="R11" gate="G$1" pin="1"/>
-<pinref part="P-SENS" gate="G$1" pin="A"/>
-<wire x1="172.72" y1="152.4" x2="172.72" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SENS_OUT" class="0">
 <segment>
 <pinref part="N_M_SENS" gate="G$1" pin="D"/>
@@ -16392,14 +16379,6 @@ PB10</text>
 <pinref part="U$2" gate="G$1" pin="8"/>
 <wire x1="149.86" y1="116.84" x2="116.84" y2="116.84" width="0.1524" layer="91"/>
 <label x="116.84" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="P-LCD" gate="G$1" pin="A"/>
-<wire x1="17.78" y1="137.16" x2="17.78" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="134.62" x2="22.86" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_OUT" class="0">
